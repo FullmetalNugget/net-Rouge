@@ -8,6 +8,38 @@ namespace rouge_net
 {
     internal class Game
     {
+        private Role AskRole()
+        {
+            Role choice = Role.Criminal;
+            while (true)
+            {
+                Console.WriteLine("Select role for your character:");
+                Console.WriteLine($"1: {Role.Criminal.ToString()}");
+                Console.WriteLine($"2: {Role.Rouge.ToString()}");
+                Console.WriteLine($"3: {Role.Cook.ToString()}");
+                string answer = Console.ReadLine();
+
+                if (answer == "1")
+                {
+                    choice = Role.Criminal;
+                }
+                else if (answer == "2")
+                {
+                    choice = Role.Rouge;
+                }
+                else if (answer == "3")
+                {
+                    choice = Role.Cook;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid choice!");
+                    continue;
+                }
+
+                return choice;
+            }
+        }
         private string AskName()
         {
             string nameAnswer;
@@ -39,39 +71,6 @@ namespace rouge_net
                 }
 
                 return nameAnswer;
-            }
-        }
-
-        private Role AskRole()
-        {
-            Role choice = Role.Criminal;
-            while (true)
-            {
-                Console.WriteLine("Select role for your character:");
-                Console.WriteLine($"1: {Role.Criminal.ToString()}");
-                Console.WriteLine($"2: {Role.Rouge.ToString()}");
-                Console.WriteLine($"3: {Role.Cook.ToString()}");
-                string answer = Console.ReadLine();
-
-                if (answer == "1")
-                {
-                    choice = Role.Criminal;
-                }
-                else if (answer == "2")
-                {
-                    choice = Role.Rouge;
-                }
-                else if (answer == "3")
-                {
-                    choice = Role.Cook;
-                }
-                else
-                {
-                    Console.WriteLine("Invalid choice!");
-                    continue;
-                }
-
-                return choice;
             }
         }
         private Species AskSpecies()
