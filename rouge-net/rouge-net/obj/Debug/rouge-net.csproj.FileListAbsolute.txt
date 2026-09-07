@@ -1,0 +1,7 @@
+C:\net-Rouge\rouge-net\rouge-net\bin\Debug\rouge-net.exe.config
+C:\net-Rouge\rouge-net\rouge-net\bin\Debug\rouge-net.exe
+C:\net-Rouge\rouge-net\rouge-net\bin\Debug\rouge-net.pdb
+C:\net-Rouge\rouge-net\rouge-net\obj\Debug\rouge-net.csproj.AssemblyReference.cache
+C:\net-Rouge\rouge-net\rouge-net\obj\Debug\rouge-net.csproj.CoreCompileInputs.cache
+C:\net-Rouge\rouge-net\rouge-net\obj\Debug\rouge-net.exe
+C:\net-Rouge\rouge-net\rouge-net\obj\Debug\rouge-net.pdb
